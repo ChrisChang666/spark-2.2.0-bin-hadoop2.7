@@ -1,0 +1,73 @@
+Spark Command: /Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/bin/java -cp /Users/michael.wh/workspace/spark-2.2.0-bin-hadoop2.7/conf/:/Users/michael.wh/workspace/spark-2.2.0-bin-hadoop2.7/jars/* -Xmx1g org.apache.spark.deploy.master.Master --host MichaeldeMacBook-Pro.local --port 7077 --webui-port 8080
+========================================
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+18/01/23 09:42:04 INFO Master: Started daemon with process name: 93736@MichaeldeMacBook-Pro.local
+18/01/23 09:42:04 INFO SignalUtils: Registered signal handler for TERM
+18/01/23 09:42:04 INFO SignalUtils: Registered signal handler for HUP
+18/01/23 09:42:04 INFO SignalUtils: Registered signal handler for INT
+18/01/23 09:42:05 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+18/01/23 09:42:05 INFO SecurityManager: Changing view acls to: michael.wh
+18/01/23 09:42:05 INFO SecurityManager: Changing modify acls to: michael.wh
+18/01/23 09:42:05 INFO SecurityManager: Changing view acls groups to: 
+18/01/23 09:42:05 INFO SecurityManager: Changing modify acls groups to: 
+18/01/23 09:42:05 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(michael.wh); groups with view permissions: Set(); users  with modify permissions: Set(michael.wh); groups with modify permissions: Set()
+18/01/23 09:42:05 INFO Utils: Successfully started service 'sparkMaster' on port 7077.
+18/01/23 09:42:06 INFO Master: Starting Spark master at spark://MichaeldeMacBook-Pro.local:7077
+18/01/23 09:42:06 INFO Master: Running Spark version 2.2.0
+18/01/23 09:42:06 INFO Utils: Successfully started service 'MasterUI' on port 8080.
+18/01/23 09:42:06 INFO MasterWebUI: Bound MasterWebUI to 0.0.0.0, and started at http://30.28.160.77:8080
+18/01/23 09:42:06 INFO Utils: Successfully started service on port 6066.
+18/01/23 09:42:06 INFO StandaloneRestServer: Started REST server for submitting applications on port 6066
+18/01/23 09:42:06 INFO Master: I have been elected leader! New state: ALIVE
+18/01/23 09:42:09 INFO Master: Registering worker 100.81.192.79:29549 with 2 cores, 2.0 GB RAM
+18/01/23 09:42:09 WARN Master: Got status update for unknown executor app-20180123093640-0006/0
+18/01/23 09:43:54 INFO Master: 100.81.192.79:24282 got disassociated, removing it.
+18/01/23 09:43:54 INFO Master: 100.81.192.79:29549 got disassociated, removing it.
+18/01/23 09:43:54 INFO Master: Removing worker worker-20180123093507-100.81.192.79-29549 on 100.81.192.79:29549
+18/01/23 09:44:03 INFO Master: Registering worker 100.81.192.79:62180 with 2 cores, 2.0 GB RAM
+18/01/23 09:45:59 INFO Master: Registering app PySparkShell
+18/01/23 09:45:59 INFO Master: Registered app PySparkShell with ID app-20180123094559-0000
+18/01/23 09:45:59 INFO Master: Launching executor app-20180123094559-0000/0 on worker worker-20180123094403-100.81.192.79-62180
+18/01/23 09:48:29 INFO Master: Received unregister request from application app-20180123094559-0000
+18/01/23 09:48:29 INFO Master: Removing app app-20180123094559-0000
+18/01/23 09:48:29 INFO Master: 100.81.192.79:39226 got disassociated, removing it.
+18/01/23 09:48:29 INFO Master: 100.81.192.79:34357 got disassociated, removing it.
+18/01/23 09:48:29 WARN Master: Got status update for unknown executor app-20180123094559-0000/0
+18/01/23 09:48:42 INFO Master: Registering app PySparkShell
+18/01/23 09:48:42 INFO Master: Registered app PySparkShell with ID app-20180123094842-0001
+18/01/23 09:48:42 INFO Master: Launching executor app-20180123094842-0001/0 on worker worker-20180123094403-100.81.192.79-62180
+18/01/23 09:56:45 INFO Master: Received unregister request from application app-20180123094842-0001
+18/01/23 09:56:45 INFO Master: Removing app app-20180123094842-0001
+18/01/23 09:56:45 INFO Master: 100.81.192.79:63362 got disassociated, removing it.
+18/01/23 09:56:45 INFO Master: 100.81.192.79:46569 got disassociated, removing it.
+18/01/23 09:56:45 WARN Master: Got status update for unknown executor app-20180123094842-0001/0
+18/01/23 09:57:11 INFO Master: Registering app PySparkShell
+18/01/23 09:57:11 INFO Master: Registered app PySparkShell with ID app-20180123095711-0002
+18/01/23 09:57:11 INFO Master: Launching executor app-20180123095711-0002/0 on worker worker-20180123094403-100.81.192.79-62180
+18/01/23 10:16:18 INFO Master: Registering app PySparkShell
+18/01/23 10:16:18 INFO Master: Registered app PySparkShell with ID app-20180123101618-0003
+18/01/23 10:22:48 WARN Master: Got status update for unknown executor app-20180123094842-0001/0
+18/01/23 10:22:49 INFO Master: 100.81.192.79:40218 got disassociated, removing it.
+18/01/23 10:22:49 INFO Master: 100.81.192.79:62180 got disassociated, removing it.
+18/01/23 10:22:49 INFO Master: Removing worker worker-20180123094403-100.81.192.79-62180 on 100.81.192.79:62180
+18/01/23 10:22:49 INFO Master: Telling app of lost executor: 0
+18/01/23 10:23:27 INFO Master: Received unregister request from application app-20180123095711-0002
+18/01/23 10:23:27 INFO Master: Removing app app-20180123095711-0002
+18/01/23 10:23:27 INFO Master: 100.81.192.79:56528 got disassociated, removing it.
+18/01/23 10:23:27 INFO Master: 100.81.192.79:36292 got disassociated, removing it.
+18/01/23 10:23:36 INFO Master: Registering worker 100.81.192.79:38439 with 2 cores, 2.0 GB RAM
+18/01/23 10:23:36 INFO Master: Launching executor app-20180123101618-0003/0 on worker worker-20180123102335-100.81.192.79-38439
+18/01/23 10:24:58 INFO Master: Received unregister request from application app-20180123101618-0003
+18/01/23 10:24:58 INFO Master: Removing app app-20180123101618-0003
+18/01/23 10:24:58 INFO Master: 30.28.160.77:61672 got disassociated, removing it.
+18/01/23 10:24:58 INFO Master: 30.28.160.77:61671 got disassociated, removing it.
+18/01/23 10:24:58 WARN Master: Got status update for unknown executor app-20180123101618-0003/0
+18/01/23 10:25:03 INFO Master: Registering app PySparkShell
+18/01/23 10:25:03 INFO Master: Registered app PySparkShell with ID app-20180123102503-0004
+18/01/23 10:25:03 INFO Master: Launching executor app-20180123102503-0004/0 on worker worker-20180123102335-100.81.192.79-38439
+18/01/23 11:12:35 INFO Master: 100.81.192.79:31909 got disassociated, removing it.
+18/01/23 11:12:35 INFO Master: 100.81.192.79:38439 got disassociated, removing it.
+18/01/23 11:12:35 INFO Master: Removing worker worker-20180123102335-100.81.192.79-38439 on 100.81.192.79:38439
+18/01/23 11:12:35 INFO Master: Telling app of lost executor: 0
+18/01/23 11:12:46 INFO Master: Registering worker 100.81.192.79:21778 with 2 cores, 2.0 GB RAM
+18/01/23 11:12:47 INFO Master: Launching executor app-20180123102503-0004/1 on worker worker-20180123111246-100.81.192.79-21778
