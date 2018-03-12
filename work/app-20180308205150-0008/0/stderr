@@ -1,0 +1,8 @@
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+18/03/08 20:51:53 INFO CoarseGrainedExecutorBackend: Started daemon with process name: 4158@onehaohdd
+18/03/08 20:51:53 INFO SignalUtils: Registered signal handler for TERM
+18/03/08 20:51:53 INFO SignalUtils: Registered signal handler for HUP
+18/03/08 20:51:53 INFO SignalUtils: Registered signal handler for INT
+18/03/08 20:51:54 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+18/03/08 20:51:54 ERROR CoarseGrainedExecutorBackend: RECEIVED SIGNAL TERM
+ry for your platform... using builtin-java classes where applicable

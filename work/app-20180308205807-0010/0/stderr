@@ -1,0 +1,166 @@
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+18/03/08 20:58:10 INFO CoarseGrainedExecutorBackend: Started daemon with process name: 4492@onehaohdd
+18/03/08 20:58:10 INFO SignalUtils: Registered signal handler for TERM
+18/03/08 20:58:10 INFO SignalUtils: Registered signal handler for HUP
+18/03/08 20:58:10 INFO SignalUtils: Registered signal handler for INT
+18/03/08 20:58:11 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+18/03/08 20:58:12 WARN Utils: Your hostname, onehaohdd resolves to a loopback address: 127.0.1.1; using 192.168.0.112 instead (on interface wlan0)
+18/03/08 20:58:12 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+18/03/08 20:58:12 INFO SecurityManager: Changing view acls to: onehao
+18/03/08 20:58:12 INFO SecurityManager: Changing modify acls to: onehao
+18/03/08 20:58:12 INFO SecurityManager: Changing view acls groups to: 
+18/03/08 20:58:12 INFO SecurityManager: Changing modify acls groups to: 
+18/03/08 20:58:12 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(onehao); groups with view permissions: Set(); users  with modify permissions: Set(onehao); groups with modify permissions: Set()
+18/03/08 20:58:13 INFO TransportClientFactory: Successfully created connection to /192.168.0.112:59354 after 203 ms (0 ms spent in bootstraps)
+18/03/08 20:58:13 INFO SecurityManager: Changing view acls to: onehao
+18/03/08 20:58:13 INFO SecurityManager: Changing modify acls to: onehao
+18/03/08 20:58:13 INFO SecurityManager: Changing view acls groups to: 
+18/03/08 20:58:13 INFO SecurityManager: Changing modify acls groups to: 
+18/03/08 20:58:13 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(onehao); groups with view permissions: Set(); users  with modify permissions: Set(onehao); groups with modify permissions: Set()
+18/03/08 20:58:13 INFO TransportClientFactory: Successfully created connection to /192.168.0.112:59354 after 4 ms (0 ms spent in bootstraps)
+18/03/08 20:58:13 INFO DiskBlockManager: Created local directory at /tmp/spark-03a3315f-7b10-415b-b73d-05272bc2f85f/executor-b68611ae-aef8-4d36-afae-32aabe80e61c/blockmgr-dfc6aaeb-ab9b-4fce-9767-7e06d0ea9bd5
+18/03/08 20:58:14 INFO MemoryStore: MemoryStore started with capacity 912.3 MB
+18/03/08 20:58:14 INFO CoarseGrainedExecutorBackend: Connecting to driver: spark://CoarseGrainedScheduler@192.168.0.112:59354
+18/03/08 20:58:14 INFO WorkerWatcher: Connecting to worker spark://Worker@192.168.0.112:60291
+18/03/08 20:58:14 INFO TransportClientFactory: Successfully created connection to /192.168.0.112:60291 after 10 ms (0 ms spent in bootstraps)
+18/03/08 20:58:14 INFO WorkerWatcher: Successfully connected to spark://Worker@192.168.0.112:60291
+18/03/08 20:58:14 INFO CoarseGrainedExecutorBackend: Successfully registered with driver
+18/03/08 20:58:14 INFO Executor: Starting executor ID 0 on host 192.168.0.112
+18/03/08 20:58:14 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 51624.
+18/03/08 20:58:14 INFO NettyBlockTransferService: Server created on 192.168.0.112:51624
+18/03/08 20:58:14 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+18/03/08 20:58:14 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(0, 192.168.0.112, 51624, None)
+18/03/08 20:58:14 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(0, 192.168.0.112, 51624, None)
+18/03/08 20:58:14 INFO BlockManager: Initialized BlockManager: BlockManagerId(0, 192.168.0.112, 51624, None)
+18/03/08 20:58:14 INFO CoarseGrainedExecutorBackend: Got assigned task 0
+18/03/08 20:58:14 INFO CoarseGrainedExecutorBackend: Got assigned task 1
+18/03/08 20:58:14 INFO CoarseGrainedExecutorBackend: Got assigned task 2
+18/03/08 20:58:14 INFO Executor: Running task 1.0 in stage 0.0 (TID 1)
+18/03/08 20:58:14 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+18/03/08 20:58:14 INFO Executor: Running task 2.0 in stage 0.0 (TID 2)
+18/03/08 20:58:15 INFO Executor: Fetching spark://192.168.0.112:59354/jars/data-algorithms-1.0.0.jar with timestamp 1520513887192
+18/03/08 20:58:15 INFO TransportClientFactory: Successfully created connection to /192.168.0.112:59354 after 3 ms (0 ms spent in bootstraps)
+18/03/08 20:58:15 INFO Utils: Fetching spark://192.168.0.112:59354/jars/data-algorithms-1.0.0.jar to /tmp/spark-03a3315f-7b10-415b-b73d-05272bc2f85f/executor-b68611ae-aef8-4d36-afae-32aabe80e61c/spark-a1f3289d-e61c-43ab-8d34-8f0d8f924187/fetchFileTemp2405634465151124647.tmp
+18/03/08 20:58:15 INFO Utils: Copying /tmp/spark-03a3315f-7b10-415b-b73d-05272bc2f85f/executor-b68611ae-aef8-4d36-afae-32aabe80e61c/spark-a1f3289d-e61c-43ab-8d34-8f0d8f924187/-20931407601520513887192_cache to /home/onehao/soft/spark-2.2.0-bin-hadoop2.7/work/app-20180308205807-0010/0/./data-algorithms-1.0.0.jar
+18/03/08 20:58:15 INFO Executor: Adding file:/home/onehao/soft/spark-2.2.0-bin-hadoop2.7/work/app-20180308205807-0010/0/./data-algorithms-1.0.0.jar to class loader
+18/03/08 20:58:15 INFO TorrentBroadcast: Started reading broadcast variable 1
+18/03/08 20:58:15 INFO TransportClientFactory: Successfully created connection to /192.168.0.112:56009 after 2 ms (0 ms spent in bootstraps)
+18/03/08 20:58:15 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 25.7 KB, free 912.3 MB)
+18/03/08 20:58:15 INFO TorrentBroadcast: Reading broadcast variable 1 took 255 ms
+18/03/08 20:58:15 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 71.8 KB, free 912.2 MB)
+18/03/08 20:58:16 INFO HadoopRDD: Input split: hdfs://localhost:9000/data/chap03/input/file2.txt:0+32
+18/03/08 20:58:16 INFO TorrentBroadcast: Started reading broadcast variable 0
+18/03/08 20:58:16 INFO HadoopRDD: Input split: hdfs://localhost:9000/data/chap03/input/file1.txt:0+41
+18/03/08 20:58:16 INFO HadoopRDD: Input split: hdfs://localhost:9000/data/chap03/input/file3.txt:0+27
+18/03/08 20:58:16 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 22.9 KB, free 912.2 MB)
+18/03/08 20:58:16 INFO TorrentBroadcast: Reading broadcast variable 0 took 52 ms
+18/03/08 20:58:16 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 320.9 KB, free 911.9 MB)
+18/03/08 20:58:18 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+18/03/08 20:58:18 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+18/03/08 20:58:18 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+18/03/08 20:58:19 INFO FileOutputCommitter: Saved output of task 'attempt_20180308205811_0000_m_000002_2' to file:/output/1/_temporary/0/task_20180308205811_0000_m_000002
+18/03/08 20:58:19 INFO FileOutputCommitter: Saved output of task 'attempt_20180308205811_0000_m_000000_0' to file:/output/1/_temporary/0/task_20180308205811_0000_m_000000
+18/03/08 20:58:19 INFO FileOutputCommitter: Saved output of task 'attempt_20180308205811_0000_m_000001_1' to file:/output/1/_temporary/0/task_20180308205811_0000_m_000001
+18/03/08 20:58:19 INFO SparkHadoopMapRedUtil: attempt_20180308205811_0000_m_000000_0: Committed
+18/03/08 20:58:19 INFO SparkHadoopMapRedUtil: attempt_20180308205811_0000_m_000001_1: Committed
+18/03/08 20:58:19 INFO SparkHadoopMapRedUtil: attempt_20180308205811_0000_m_000002_2: Committed
+18/03/08 20:58:19 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 966 bytes result sent to driver
+18/03/08 20:58:19 INFO Executor: Finished task 1.0 in stage 0.0 (TID 1). 1756 bytes result sent to driver
+18/03/08 20:58:19 INFO Executor: Finished task 2.0 in stage 0.0 (TID 2). 1756 bytes result sent to driver
+18/03/08 20:58:19 INFO CoarseGrainedExecutorBackend: Got assigned task 3
+18/03/08 20:58:19 INFO Executor: Running task 0.0 in stage 1.0 (TID 3)
+18/03/08 20:58:19 INFO CoarseGrainedExecutorBackend: Got assigned task 4
+18/03/08 20:58:19 INFO Executor: Running task 1.0 in stage 1.0 (TID 4)
+18/03/08 20:58:19 INFO CoarseGrainedExecutorBackend: Got assigned task 5
+18/03/08 20:58:19 INFO Executor: Running task 2.0 in stage 1.0 (TID 5)
+18/03/08 20:58:19 INFO TorrentBroadcast: Started reading broadcast variable 2
+18/03/08 20:58:19 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 26.1 KB, free 911.8 MB)
+18/03/08 20:58:19 INFO TorrentBroadcast: Reading broadcast variable 2 took 34 ms
+18/03/08 20:58:19 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 72.4 KB, free 911.8 MB)
+18/03/08 20:58:19 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+18/03/08 20:58:19 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+18/03/08 20:58:19 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+18/03/08 20:58:19 INFO HadoopRDD: Input split: hdfs://localhost:9000/data/chap03/input/file2.txt:0+32
+18/03/08 20:58:19 INFO HadoopRDD: Input split: hdfs://localhost:9000/data/chap03/input/file3.txt:0+27
+18/03/08 20:58:19 INFO HadoopRDD: Input split: hdfs://localhost:9000/data/chap03/input/file1.txt:0+41
+18/03/08 20:58:19 INFO FileOutputCommitter: Saved output of task 'attempt_20180308205819_0001_m_000002_5' to file:/output/2/_temporary/0/task_20180308205819_0001_m_000002
+18/03/08 20:58:19 INFO SparkHadoopMapRedUtil: attempt_20180308205819_0001_m_000002_5: Committed
+18/03/08 20:58:19 INFO Executor: Finished task 2.0 in stage 1.0 (TID 5). 880 bytes result sent to driver
+18/03/08 20:58:19 INFO FileOutputCommitter: Saved output of task 'attempt_20180308205819_0001_m_000001_4' to file:/output/2/_temporary/0/task_20180308205819_0001_m_000001
+18/03/08 20:58:19 INFO SparkHadoopMapRedUtil: attempt_20180308205819_0001_m_000001_4: Committed
+18/03/08 20:58:19 INFO FileOutputCommitter: Saved output of task 'attempt_20180308205819_0001_m_000000_3' to file:/output/2/_temporary/0/task_20180308205819_0001_m_000000
+18/03/08 20:58:19 INFO SparkHadoopMapRedUtil: attempt_20180308205819_0001_m_000000_3: Committed
+18/03/08 20:58:19 INFO Executor: Finished task 1.0 in stage 1.0 (TID 4). 923 bytes result sent to driver
+18/03/08 20:58:19 INFO Executor: Finished task 0.0 in stage 1.0 (TID 3). 1670 bytes result sent to driver
+18/03/08 20:58:20 INFO CoarseGrainedExecutorBackend: Got assigned task 6
+18/03/08 20:58:20 INFO CoarseGrainedExecutorBackend: Got assigned task 7
+18/03/08 20:58:20 INFO Executor: Running task 0.0 in stage 2.0 (TID 6)
+18/03/08 20:58:20 INFO Executor: Running task 1.0 in stage 2.0 (TID 7)
+18/03/08 20:58:20 INFO CoarseGrainedExecutorBackend: Got assigned task 8
+18/03/08 20:58:20 INFO Executor: Running task 2.0 in stage 2.0 (TID 8)
+18/03/08 20:58:20 INFO TorrentBroadcast: Started reading broadcast variable 3
+18/03/08 20:58:20 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 2.7 KB, free 911.8 MB)
+18/03/08 20:58:20 INFO TorrentBroadcast: Reading broadcast variable 3 took 43 ms
+18/03/08 20:58:20 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 4.8 KB, free 911.8 MB)
+18/03/08 20:58:20 INFO HadoopRDD: Input split: hdfs://localhost:9000/data/chap03/input/file3.txt:0+27
+18/03/08 20:58:20 INFO HadoopRDD: Input split: hdfs://localhost:9000/data/chap03/input/file2.txt:0+32
+18/03/08 20:58:20 INFO HadoopRDD: Input split: hdfs://localhost:9000/data/chap03/input/file1.txt:0+41
+18/03/08 20:58:20 INFO Executor: Finished task 2.0 in stage 2.0 (TID 8). 1151 bytes result sent to driver
+18/03/08 20:58:20 INFO Executor: Finished task 0.0 in stage 2.0 (TID 6). 1941 bytes result sent to driver
+18/03/08 20:58:20 INFO Executor: Finished task 1.0 in stage 2.0 (TID 7). 1108 bytes result sent to driver
+18/03/08 20:58:20 INFO CoarseGrainedExecutorBackend: Got assigned task 9
+18/03/08 20:58:20 INFO Executor: Running task 0.0 in stage 3.0 (TID 9)
+18/03/08 20:58:20 INFO MapOutputTrackerWorker: Updating epoch to 1 and clearing cache
+18/03/08 20:58:20 INFO TorrentBroadcast: Started reading broadcast variable 4
+18/03/08 20:58:20 INFO CoarseGrainedExecutorBackend: Got assigned task 10
+18/03/08 20:58:20 INFO Executor: Running task 1.0 in stage 3.0 (TID 10)
+18/03/08 20:58:20 INFO CoarseGrainedExecutorBackend: Got assigned task 11
+18/03/08 20:58:20 INFO Executor: Running task 2.0 in stage 3.0 (TID 11)
+18/03/08 20:58:20 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 25.8 KB, free 911.7 MB)
+18/03/08 20:58:20 INFO TorrentBroadcast: Reading broadcast variable 4 took 30 ms
+18/03/08 20:58:20 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 71.9 KB, free 911.7 MB)
+18/03/08 20:58:20 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 0, fetching them
+18/03/08 20:58:20 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 0, fetching them
+18/03/08 20:58:20 INFO MapOutputTrackerWorker: Doing the fetch; tracker endpoint = NettyRpcEndpointRef(spark://MapOutputTracker@192.168.0.112:59354)
+18/03/08 20:58:20 INFO MapOutputTrackerWorker: Don't have map outputs for shuffle 0, fetching them
+18/03/08 20:58:20 INFO MapOutputTrackerWorker: Got the output locations
+18/03/08 20:58:20 INFO ShuffleBlockFetcherIterator: Getting 3 non-empty blocks out of 3 blocks
+18/03/08 20:58:20 INFO ShuffleBlockFetcherIterator: Getting 3 non-empty blocks out of 3 blocks
+18/03/08 20:58:20 INFO ShuffleBlockFetcherIterator: Getting 3 non-empty blocks out of 3 blocks
+18/03/08 20:58:20 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 13 ms
+18/03/08 20:58:20 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 10 ms
+18/03/08 20:58:20 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 21 ms
+18/03/08 20:58:20 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+18/03/08 20:58:20 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+18/03/08 20:58:20 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+18/03/08 20:58:20 INFO FileOutputCommitter: Saved output of task 'attempt_20180308205820_0003_m_000001_10' to file:/output/3/_temporary/0/task_20180308205820_0003_m_000001
+18/03/08 20:58:20 INFO SparkHadoopMapRedUtil: attempt_20180308205820_0003_m_000001_10: Committed
+18/03/08 20:58:20 INFO Executor: Finished task 1.0 in stage 3.0 (TID 10). 1181 bytes result sent to driver
+18/03/08 20:58:20 INFO FileOutputCommitter: Saved output of task 'attempt_20180308205820_0003_m_000002_11' to file:/output/3/_temporary/0/task_20180308205820_0003_m_000002
+18/03/08 20:58:20 INFO SparkHadoopMapRedUtil: attempt_20180308205820_0003_m_000002_11: Committed
+18/03/08 20:58:20 INFO Executor: Finished task 2.0 in stage 3.0 (TID 11). 1181 bytes result sent to driver
+18/03/08 20:58:20 INFO FileOutputCommitter: Saved output of task 'attempt_20180308205820_0003_m_000000_9' to file:/output/3/_temporary/0/task_20180308205820_0003_m_000000
+18/03/08 20:58:20 INFO SparkHadoopMapRedUtil: attempt_20180308205820_0003_m_000000_9: Committed
+18/03/08 20:58:20 INFO Executor: Finished task 0.0 in stage 3.0 (TID 9). 2014 bytes result sent to driver
+18/03/08 20:58:20 INFO CoarseGrainedExecutorBackend: Got assigned task 12
+18/03/08 20:58:20 INFO Executor: Running task 0.0 in stage 5.0 (TID 12)
+18/03/08 20:58:20 INFO CoarseGrainedExecutorBackend: Got assigned task 13
+18/03/08 20:58:20 INFO Executor: Running task 1.0 in stage 5.0 (TID 13)
+18/03/08 20:58:20 INFO CoarseGrainedExecutorBackend: Got assigned task 14
+18/03/08 20:58:20 INFO Executor: Running task 2.0 in stage 5.0 (TID 14)
+18/03/08 20:58:20 INFO TorrentBroadcast: Started reading broadcast variable 5
+18/03/08 20:58:21 INFO MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 2.3 KB, free 911.7 MB)
+18/03/08 20:58:21 INFO TorrentBroadcast: Reading broadcast variable 5 took 36 ms
+18/03/08 20:58:21 INFO MemoryStore: Block broadcast_5 stored as values in memory (estimated size 4.0 KB, free 911.7 MB)
+18/03/08 20:58:21 INFO ShuffleBlockFetcherIterator: Getting 3 non-empty blocks out of 3 blocks
+18/03/08 20:58:21 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+18/03/08 20:58:21 INFO ShuffleBlockFetcherIterator: Getting 3 non-empty blocks out of 3 blocks
+18/03/08 20:58:21 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+18/03/08 20:58:21 INFO ShuffleBlockFetcherIterator: Getting 3 non-empty blocks out of 3 blocks
+18/03/08 20:58:21 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 8 ms
+18/03/08 20:58:21 INFO Executor: Finished task 1.0 in stage 5.0 (TID 13). 1798 bytes result sent to driver
+18/03/08 20:58:21 INFO Executor: Finished task 0.0 in stage 5.0 (TID 12). 2608 bytes result sent to driver
+18/03/08 20:58:21 INFO Executor: Finished task 2.0 in stage 5.0 (TID 14). 1818 bytes result sent to driver
+18/03/08 20:58:21 INFO CoarseGrainedExecutorBackend: Driver commanded a shutdown
+18/03/08 20:58:21 ERROR CoarseGrainedExecutorBackend: RECEIVED SIGNAL TERM
+tdown

@@ -1,0 +1,63 @@
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+18/03/07 18:35:42 INFO CoarseGrainedExecutorBackend: Started daemon with process name: 28089@onehaohdd
+18/03/07 18:35:42 INFO SignalUtils: Registered signal handler for TERM
+18/03/07 18:35:42 INFO SignalUtils: Registered signal handler for HUP
+18/03/07 18:35:42 INFO SignalUtils: Registered signal handler for INT
+18/03/07 18:35:44 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+18/03/07 18:35:44 WARN Utils: Your hostname, onehaohdd resolves to a loopback address: 127.0.1.1; using 192.168.0.112 instead (on interface wlan0)
+18/03/07 18:35:44 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+18/03/07 18:35:44 INFO SecurityManager: Changing view acls to: onehao
+18/03/07 18:35:44 INFO SecurityManager: Changing modify acls to: onehao
+18/03/07 18:35:44 INFO SecurityManager: Changing view acls groups to: 
+18/03/07 18:35:44 INFO SecurityManager: Changing modify acls groups to: 
+18/03/07 18:35:44 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(onehao); groups with view permissions: Set(); users  with modify permissions: Set(onehao); groups with modify permissions: Set()
+18/03/07 18:35:45 INFO TransportClientFactory: Successfully created connection to /192.168.0.112:33126 after 182 ms (0 ms spent in bootstraps)
+18/03/07 18:35:45 INFO SecurityManager: Changing view acls to: onehao
+18/03/07 18:35:45 INFO SecurityManager: Changing modify acls to: onehao
+18/03/07 18:35:45 INFO SecurityManager: Changing view acls groups to: 
+18/03/07 18:35:45 INFO SecurityManager: Changing modify acls groups to: 
+18/03/07 18:35:45 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(onehao); groups with view permissions: Set(); users  with modify permissions: Set(onehao); groups with modify permissions: Set()
+18/03/07 18:35:45 INFO TransportClientFactory: Successfully created connection to /192.168.0.112:33126 after 5 ms (0 ms spent in bootstraps)
+18/03/07 18:35:45 INFO DiskBlockManager: Created local directory at /tmp/spark-03a3315f-7b10-415b-b73d-05272bc2f85f/executor-1a497e34-8954-4e8a-83f3-d16b12cd8053/blockmgr-2bb465d7-8819-4a59-919e-e87f97fff260
+18/03/07 18:35:46 INFO MemoryStore: MemoryStore started with capacity 912.3 MB
+18/03/07 18:35:46 INFO CoarseGrainedExecutorBackend: Connecting to driver: spark://CoarseGrainedScheduler@192.168.0.112:33126
+18/03/07 18:35:46 INFO WorkerWatcher: Connecting to worker spark://Worker@192.168.0.112:60291
+18/03/07 18:35:46 INFO TransportClientFactory: Successfully created connection to /192.168.0.112:60291 after 4 ms (0 ms spent in bootstraps)
+18/03/07 18:35:46 INFO WorkerWatcher: Successfully connected to spark://Worker@192.168.0.112:60291
+18/03/07 18:35:46 INFO CoarseGrainedExecutorBackend: Successfully registered with driver
+18/03/07 18:35:46 INFO Executor: Starting executor ID 0 on host 192.168.0.112
+18/03/07 18:35:46 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 50965.
+18/03/07 18:35:46 INFO NettyBlockTransferService: Server created on 192.168.0.112:50965
+18/03/07 18:35:46 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+18/03/07 18:35:46 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(0, 192.168.0.112, 50965, None)
+18/03/07 18:35:46 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(0, 192.168.0.112, 50965, None)
+18/03/07 18:35:46 INFO BlockManager: Initialized BlockManager: BlockManagerId(0, 192.168.0.112, 50965, None)
+18/03/07 18:35:46 INFO CoarseGrainedExecutorBackend: Got assigned task 0
+18/03/07 18:35:46 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+18/03/07 18:35:47 INFO Executor: Fetching spark://192.168.0.112:33126/jars/data-algorithms-1.0.0.jar with timestamp 1520418939950
+18/03/07 18:35:47 INFO TransportClientFactory: Successfully created connection to /192.168.0.112:33126 after 8 ms (0 ms spent in bootstraps)
+18/03/07 18:35:47 INFO Utils: Fetching spark://192.168.0.112:33126/jars/data-algorithms-1.0.0.jar to /tmp/spark-03a3315f-7b10-415b-b73d-05272bc2f85f/executor-1a497e34-8954-4e8a-83f3-d16b12cd8053/spark-2b3a94a6-a464-4f30-b369-e6905a755e3a/fetchFileTemp4476196087524830661.tmp
+18/03/07 18:35:47 INFO Utils: Copying /tmp/spark-03a3315f-7b10-415b-b73d-05272bc2f85f/executor-1a497e34-8954-4e8a-83f3-d16b12cd8053/spark-2b3a94a6-a464-4f30-b369-e6905a755e3a/13130816331520418939950_cache to /home/onehao/soft/spark-2.2.0-bin-hadoop2.7/work/app-20180307183540-0007/0/./data-algorithms-1.0.0.jar
+18/03/07 18:35:47 INFO Executor: Adding file:/home/onehao/soft/spark-2.2.0-bin-hadoop2.7/work/app-20180307183540-0007/0/./data-algorithms-1.0.0.jar to class loader
+18/03/07 18:35:47 INFO TorrentBroadcast: Started reading broadcast variable 1
+18/03/07 18:35:47 INFO TransportClientFactory: Successfully created connection to /192.168.0.112:49218 after 6 ms (0 ms spent in bootstraps)
+18/03/07 18:35:48 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 2.1 KB, free 912.3 MB)
+18/03/07 18:35:48 INFO TorrentBroadcast: Reading broadcast variable 1 took 583 ms
+18/03/07 18:35:48 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 3.5 KB, free 912.3 MB)
+18/03/07 18:35:48 INFO HadoopRDD: Input split: file:/home/onehao/workspace/data-algorithms-book/data/top10data.txt:0+147
+18/03/07 18:35:48 INFO TorrentBroadcast: Started reading broadcast variable 0
+18/03/07 18:35:48 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 22.9 KB, free 912.3 MB)
+18/03/07 18:35:48 INFO TorrentBroadcast: Reading broadcast variable 0 took 37 ms
+18/03/07 18:35:48 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 320.9 KB, free 912.0 MB)
+18/03/07 18:35:49 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 2265 bytes result sent to driver
+18/03/07 18:35:49 INFO CoarseGrainedExecutorBackend: Got assigned task 1
+18/03/07 18:35:49 INFO Executor: Running task 0.0 in stage 1.0 (TID 1)
+18/03/07 18:35:49 INFO TorrentBroadcast: Started reading broadcast variable 2
+18/03/07 18:35:49 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 2.4 KB, free 912.0 MB)
+18/03/07 18:35:49 INFO TorrentBroadcast: Reading broadcast variable 2 took 32 ms
+18/03/07 18:35:49 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 4.2 KB, free 912.0 MB)
+18/03/07 18:35:49 INFO HadoopRDD: Input split: file:/home/onehao/workspace/data-algorithms-book/data/top10data.txt:0+147
+18/03/07 18:35:49 INFO Executor: Finished task 0.0 in stage 1.0 (TID 1). 1966 bytes result sent to driver
+18/03/07 18:35:49 INFO CoarseGrainedExecutorBackend: Driver commanded a shutdown
+18/03/07 18:35:49 ERROR CoarseGrainedExecutorBackend: RECEIVED SIGNAL TERM
+tdown
